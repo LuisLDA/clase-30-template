@@ -19,7 +19,7 @@ export default function TabChat() {
     <View className='flex flex-col h-full p-4'>
 
       <FlatList
-        data={[{ id: 1, content: 'Hola', role: 'user' }, { id: 2, content: 'Hola', role: 'assistant' }]}
+        data={messages}
         renderItem={({ item }) => (
           console.log(item),
           <BubbleMessage message={item.content} type={item.role} />
